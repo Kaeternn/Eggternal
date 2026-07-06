@@ -1,9 +1,11 @@
-package me.kaeternn.plugin;
+package me.kaeternn.eggternal;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Plugin extends JavaPlugin {
-    public static Plugin plugin;
+import me.kaeternn.eggternal.commands.EGTCommand;
+
+public class Eggternal extends JavaPlugin {
+    public static Eggternal plugin;
     public boolean debug;
 
     @Override
@@ -15,7 +17,7 @@ public class Plugin extends JavaPlugin {
         loadConfig();
 
         //getServer().getPluginManager().registerEvents(new Listener(plugin), plugin);
-        //registerCommand("plugin", new PluginCommand(plugin));
+        registerCommand("egt", new EGTCommand(plugin));
     }
 
     private void updateConfig() {

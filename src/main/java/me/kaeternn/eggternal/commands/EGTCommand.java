@@ -1,22 +1,21 @@
-package me.kaeternn.plugin.commands;
+package me.kaeternn.eggternal.commands;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import io.papermc.paper.command.brigadier.BasicCommand;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
+import me.kaeternn.eggternal.Eggternal;
 
-import me.kaeternn.plugin.Plugin;
+public class EGTCommand implements BasicCommand  {
+    private Eggternal plugin;
 
-public class PluginCommand implements BasicCommand  {
-    private Plugin plugin;
-
-    public PluginCommand(Plugin plugin) { this.plugin = plugin; }
+    public EGTCommand(Eggternal plugin) { this.plugin = plugin; }
 
     @Override
     public void execute(CommandSourceStack source, String[] args) {
         if (args.length == 0) {
-            source.getSender().sendMessage("Usage : /plugin [reload/version]");
+            source.getSender().sendMessage("Usage : /egt [reload/version]");
             return;
         }
 
