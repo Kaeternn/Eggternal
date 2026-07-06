@@ -1,0 +1,11 @@
+name: "Plugin"
+version: "${projectVersion}"
+main: "me.kaeternn.plugin.Plugin"
+api-version: "1.21.11"
+authors: [Kaeternn]
+contributors: []
+depend: []
+softdepend: []
+commands:
+permissions:
+
