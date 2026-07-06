@@ -1,5 +1,5 @@
 # EGGTERNAL - by Kaeternn
-A simple yet configurable plugin to prevent frogs, turtles and sniffers eggs to hatch.
+A simple yet configurable plugin to prevent frogs and sniffers eggs to hatch.
 ## Installation
 This plugin requires [Paper](https://papermc.io/downloads/paper).
 
@@ -11,6 +11,8 @@ Note that the plugin will not overwrite your settings when the configuration is 
 ## Configuration
 ### General settings
 - ``debug``, add debug messages in console, I don't recommend enabling it if not necessary.
+- ``frog``, prevent or not frogs eggs to hatch
+- ``sniffer``, prevent or not sniffers eggs to hatch
 - ``block-list``, list of blocks that prevent eggs to hatch when placed on it (waterlogged version included).
 ## Usage
 Just let your player decorate with eggs without seeing them hatching.

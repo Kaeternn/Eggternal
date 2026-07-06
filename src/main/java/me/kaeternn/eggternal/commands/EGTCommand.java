@@ -22,10 +22,10 @@ public class EGTCommand implements BasicCommand  {
         switch (args[0]) {
             case "reload":
                 plugin.loadConfig();
-                source.getSender().sendMessage("plugin reloaded.");
+                source.getSender().sendMessage("Eggternal reloaded.");
                 break;
             case "version":
-                source.getSender().sendMessage("plugin version " + plugin.getPluginMeta().getVersion());
+                source.getSender().sendMessage("Eggternal version " + plugin.getPluginMeta().getVersion());
                 break;
         }
     }
@@ -52,6 +52,6 @@ public class EGTCommand implements BasicCommand  {
     
     @Override
     public String permission() {
-        return "plugin.admin";
+        return "eggternal.admin";
     }
 }

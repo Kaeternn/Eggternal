@@ -1,11 +1,19 @@
 name: "Eggternal"
 version: "${projectVersion}"
-main: "me.kaeternn.plugin.Eggternal"
+main: "me.kaeternn.eggternal.Eggternal"
 api-version: "1.21.11"
 authors: [Kaeternn]
 contributors: []
 depend: []
 softdepend: []
 commands:
+  egt:
+    description: "General commands of Eggternal"
+    usage: "/egt [reload|version]"
+    permission: eggternal.admin
+    permission-message: 
 permissions:
+  eggternal.admin:
+    description: "Allows the player to use /egt command."
+    default: op
 

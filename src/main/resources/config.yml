@@ -1,2 +1,9 @@
 version: ${projectVersion} # Never change this
 debug: false # Turn this to true if you need debuging information only
+frog: true # If true, frog egg won't hatch if placed on a block-list block
+sniffer: true # If true, sniffer egg won't hatch if placed on a block-list block
+block-list: # List of blocks that prevent eggs from hatching on them, see https://jd.papermc.io/paper/26.2/org/bukkit/Material.html
+  - "resin_bricks"
+  - "resin_brick_stairs"
+  - "resin_brick_wall"
+  - "resin_brick_slab"
