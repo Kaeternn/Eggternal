@@ -1,4 +1,4 @@
-# EGGTERNAL - by Kaeternn
+# Eggternal - by Kaeternn
 A simple yet configurable plugin to prevent frogs and sniffers eggs to hatch.
 ## Installation
 This plugin requires [Paper](https://papermc.io/downloads/paper).
